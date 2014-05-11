@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>产品经理如何写好一份数据分析报告（转）</title>
+   <meta name="author" content="buxiangshuo" />
+   <meta name="keywords" content="互联网,设计师,产品设计,移动开发,交互设计,心理学爱好者,敏捷开发,用户体验,情感化,Ruby on Rails,PHP,文字控,爱音乐,爱旅游" />
+   <meta name="description" content="互联网产品设计爱好者,交互设计爱好者,喜欢多角度思考问题,崇尚敏捷开发与情感化设计,注重团队建设,勉强及格的爱人和朋友" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="/assets/css/screen.css" type="text/css" media="screen, projection" />
+   <link href="/assets/css/syntax.css" type="text/css" rel="stylesheet" />
+   <link rel="shortcut icon" href="/favicon.ico" />
+
+</head>
+<body>
+
+<div class="site">
+  <div class="title">
+    <a href="/"><img src="/assets/img/logo.png" style="margin-bottom: -5px;"/></a>
+    <a class="extra" href="/">Home</a>
+	<a class="extra" href="/feeling.html">Feeling</a>
+	<a class="extra" href="/think.html">Think</a>
+	<a class="extra" href="/code.html">Code</a>
+	<a class="extra" href="/design.html">Design</a>
+    <a class="extra" href="/read.html">Read</a>
+  <!--<a class="extra" href="/resume/index.html">Resume</a>-->
+  </div>
+
+  <div id="post">
+  <h1>产品经理如何写好一份数据分析报告（转）</h1>
+
+<p class="meta">03 Jan 2014</p>
+
+<p><strong>本文转自</strong>  <a href="http://docs.chinapm.com.cn/3903.shtml">中国产品经理联盟</a></p>
+
+<blockquote>
+<p>先说说写一份好的数据分析报告的重要性，很简单，因为分析报告的输出是是你整个分析过程的成果，是评定一个产品、一个运营事件的定性结论，很可能是产品决策的参考依据，既然这么重要那当然要写好它了</p>
+</blockquote>
+
+<h2>首先，要有一个好的框架</h2>
+
+<p>跟盖房子一样，好的分析肯定是有基础有层次，有基础坚实，并且层次明了才能让阅读者一目了然，架构清晰、主次分明才能让别人容易读懂，这样才让人有读下去的欲望；</p>
+
+<h2>第二，每个分析都有结论，而且结论一定要明确</h2>
+
+<p>如果没有明确的结论那分析就不叫分析了，也失去了他本身的意义，因为你本来就是要去寻找或者印证一个结论才会去做分析的，所以千万不要忘本舍果；</p>
+
+<h2>第三，分析结论不要太多要精</h2>
+
+<p>如果可以的话一个分析一个最重要的结论就好了，很多时候分析就是发现问题，如果一个一个分析能发现一个重大问题，就达到目的了，不要事事求多，宁要仙桃一口，不要烂杏一筐，精简的结论也容易让阅者接受，减少重要阅者（通常是事务繁多的领导，没有太多时间看那么多）的阅读心理门槛，如果别人看到问题太多，结论太繁，不读下去，一百个结论也等于0；</p>
+
+<h2>第四，分析结论一定要基于紧密严禁的数据分析推导过程</h2>
+
+<p>不要有猜测性的结论，太主观的东西会没有说服力，如果一个结论连你自己都没有肯定的把握就不要拿出来误导别人了；</p>
+
+<h2>第五，好的分析要有很强的可读性</h2>
+
+<p>这里是指易读度，每个人都有自己的阅读习惯和思维方式，写东西你总会按照自己的思维逻辑来写，你自己觉得很明白，那是因为整个分析过程是你做的，别人不一定如此了解，要知道阅者往往只会花10分钟以内的时间来阅读，所以要考虑你的分析阅读者是谁？他们最关心什么？你必须站在读者的角度去写分析邮件；</p>
+
+<h2>第六，数据分析报告尽量图表化</h2>
+
+<p>这其实是第四点的补充，用图表代替大量堆砌的数字会有助于人们更形象更直观地看清楚问题和结论，当然，图表也不要太多，过多的图表一样会让人无所适从；</p>
+
+<h2>第七，好的分析报告一定要有逻辑性</h2>
+
+<p>通常要遵照：1、发现问题--2、总结问题原因--3、解决问题，这样一个流程，逻辑性强的分析报告也容易让人接受；</p>
+
+<h2>第八，好的分析一定是出自于了解产品的基础上的</h2>
+
+<p>做数据分析的产品经理本身一定要非常了解你所分析的产品的，如果你连分析的对象基本特性都不了解，分析出来的结论肯定是空中楼阁了，无根之木如何叫人信服？！</p>
+
+<h2>第九，好的分析一定要基于可靠的数据源</h2>
+
+<p>其实很多时候收集数据会占据更多的时间，包括规划定义数据、协调数据上报、让开发人员提取正确的数据或者建立良好的数据体系平台，最后才在收集的正确数据基础上做分析，既然一切都是为了找到正确的结论，那么就要保证收集到的数据的正确性，否则一切都将变成为了误导别人的努力；</p>
+
+<h2>第十，好的分析报告一定要有解决方案和建议方案</h2>
+
+<p>你既然很努力地去了解了产品并在了解的基础上做了深入的分析，那么这个过程就决定了你可能比别人都更清楚第发现了问题及问题产生的原因，那么在这个基础之上基于你的知识和了解，做出的建议和结论想必也会更有意义，而且你的老板也肯定不希望你只是个会发现问题的人，请你的那份工资更多的是为了让你解决问题的；</p>
+
+<h2>第十一，不要害怕或回避“不良结论”</h2>
+
+<p>分析就是为了发现问题，并为解决问题提供决策依据的，发现产品问题也是你的价值所在，相信你的老板请你来，不是光让你来唱赞歌的，他要的也不是一个粉饰太平的工具，发现产品问题，在产品缺陷和问题造成重大失误前解决它就是你的分析的价值所在了；</p>
+
+<h2>第十二，不要创造太多难懂的名词</h2>
+
+<p>如果你的老板在看你的分析花10分钟要叫你三次过去来解释名词，那么你写出来的价值又在哪里呢，还不如你直接过去说算了，当然如果无可避免地要写一些名词，最好要有让人易懂的“名词解释”；</p>
+
+<h2>第十三，最后要感谢那些为你的这份分析报告付出努力做出贡献的人</h2>
+
+<p>包括那些为你上报或提取数据的人，那些为产品作出支持和帮助的人（如果分析的是你自己负责的产品），肯定和尊重伙伴们的工作才会赢得更多的支持和帮助，而且我想你也不是只做一锤子买卖，懂得感谢和分享成果的人才能成为一个有素养和受人尊敬的产品经理。</p>
+
+  <p></p>
+  <div id="related">
+    <h3>最近文章</h3>
+    <ul class="posts">
+    
+      <li><span>22 Mar 2014</span> &nbsp;&raquo;&nbsp; <a href="/think/2014/03/22/ios7-design-tips.html">《IOS7人机交互设计准则》笔记</a></li>
+    
+      <li><span>02 Feb 2014</span> &nbsp;&raquo;&nbsp; <a href="/think/2014/02/02/Activity-Centered-Design.html">以人为中心的设计可能是有害的（Don Norman）</a></li>
+    
+      <li><span>02 Dec 2013</span> &nbsp;&raquo;&nbsp; <a href="/design/2013/12/02/recommend-ads-model.html">全网推荐模式设计简图</a></li>
+    
+    </ul>
+  </div>
+
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'wuyanyu'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
+	<a href="/" class="tohome">主页</a>
+	<a href="#" class="totop">顶部</a>
+</div>
+
+
+
+
+  <div class="footer">
+    <div class="contact">
+      <p>
+        Built based on <a href="https://github.com/mojombo/jekyll/">Jekyll</a><br />
+        Theme based on <a href="http://tom.preston-werner.com/">Tom</a><br />
+        Hosting on <a href="http://page.github.com/">GitHub Page</a><br />
+        Thanks for <a href="https://github.com/mojombo/">Mojombo</a>
+      </p>
+    </div>
+    <div class="contact">
+      <p>
+        <a href="http://github.com/buxiangshuo/">Github</a><br />
+        <a href="http://weibo.com/moshuohua/">微博</a><br />
+        <a href="http://www.douban.com/people/47516504/">豆瓣</a><br />
+        <a href="mailto:moshuohua@gmail.com">Gmail</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- disqus comment count -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'wuyanyu'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+<!-- baidu script -->
+
+<script type="text/javascript">
+   var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+   document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6b94dd9b0c69ce6e1bea7a33a4f2dc5d' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- google script -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30271188-2', 'wuyanyu.com');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

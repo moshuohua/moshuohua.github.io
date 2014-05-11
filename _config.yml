@@ -1,0 +1,4 @@
+markdown: redcarpet
+pygments: true
+paginate: 25
+destination: _site/blog
