@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 五种与工程师沟通的方法(转)
+title: 五种与工程师沟通的方法（转）
 category: think
 ---
 
