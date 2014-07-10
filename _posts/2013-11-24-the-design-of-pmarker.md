@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 第一次APP设计部分样图-Pmarker
+title: APP设计样图-Pmarker（图）
 category: design
 ---
 

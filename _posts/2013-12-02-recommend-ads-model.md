@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 全网推荐模式设计简图
+title: 全网推荐模式设计（图）
 category: design
 ---
 

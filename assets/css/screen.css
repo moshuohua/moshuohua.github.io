@@ -36,12 +36,12 @@ p {
 }
 
 a {
-  color: #a00;
+  color: #000;
   text-decoration: none;
 }
 
 a:hover {
-  color: black;
+  color: #aaa;
   text-decoration: underline;
 }
 
@@ -192,6 +192,10 @@ ul.posts {
 	height: 27px;
 	margin-top: 27px;
   }
+  
+  #post a {
+	color: #a00 !important;
+  }
 
   #post h2 {
 	border-left: 9px solid #d3d8db;
@@ -219,7 +223,7 @@ ul.posts {
   }
 
   #post img {
-	margin: 10px 0px;
+	margin: 10px auto;
   }
 
   #post pre {
