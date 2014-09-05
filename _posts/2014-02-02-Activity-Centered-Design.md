@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 以人为中心的设计可能是有害的（Don Norman）
+title: 以人为中心的设计可能是有害的
 category: think
 ---
 
