@@ -70,7 +70,7 @@ ul.posts {
 }
 
   ul.posts li {
-    line-height: 2em;
+    line-height: 72px;
 	border-bottom: 1px dashed #eee;
   }
 
@@ -230,6 +230,7 @@ ul.posts {
 	max-width: 42em;
 	border: 1px solid #eee;
     border-left-width: 10px;
+	border-right-width: 10px;
 	background-color: #ffffff;
 	padding: 11px;
 	margin-bottom: 16px;

@@ -1,4 +1,4 @@
 markdown: redcarpet
 pygments: true
-paginate: 25
+paginate: 30
 destination: _site/blog
