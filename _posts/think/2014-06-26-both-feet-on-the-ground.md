@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 踏实思考，主观设计
-category: think
 ---
 
 #{{ page.title }}
