@@ -13,4 +13,51 @@ category: think
       <li><span>{{ post.date | date_to_string }}</span>&nbsp; &raquo; &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+  
+  <div id="post-pagination" class="pagination">
+    {% if paginator.previous_page %}
+      <div class="previous">
+        {% if paginator.previous_page == 1 %}
+          <a href="/">上一页</a>
+        {% else %}
+          <a href="{{ paginator.previous_page_path }}">上一页</a>
+        {% endif %}
+      </div>
+    {% else %}
+      <div class="p-disabled">
+        左边界
+      </div>
+    {% endif %}
+
+    <ul class="pages">
+      <li class="page">
+        {% if paginator.page == 1 %}
+          <span class="current-page">1</span>
+        {% else %}
+          <a href="/">1</a>
+        {% endif %}
+      </li>
+
+      {% for count in (2..paginator.total_pages) %}
+        <li class="page">
+          {% if count == paginator.page %}
+            <span class="current-page">{{ count }}</span>
+          {% else %}
+            <a href="/page{{ count }}">{{ count }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+
+    {% if paginator.next_page %}
+      <div class="next">
+        <a href="{{ paginator.next_page_path }}">下一页</a>
+      </div>
+    {% else %}
+      <div class="n-disabled">
+        右边界
+      </div>
+    {% endif %}
+  </div>
+  
 </div>
