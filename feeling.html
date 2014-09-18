@@ -9,7 +9,7 @@ name: feeling
 	<img src="/assets/banner/feel.png"/>
   </div>
   <ul class="posts">
-    {% for post in site.collections[page.name] %}
+    {% for post in site.categories[page.name] %}
       <li><span>{{ post.date | date_to_string }}</span>&nbsp; &raquo; &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
