@@ -198,7 +198,7 @@ ul.posts {
   }
 
   #post h2 {
-	border-left: 9px solid #d3d8db;
+	border-left: 4px solid #d3d8db;
     color:#a00;
 	padding-left: 10px;
 	margin-top: 24px;
@@ -281,7 +281,7 @@ ul.posts {
 
   #related h3 {
     margin-bottom: 8px;
-    border-left: 9px solid #a00000;
+    border-left: 4px solid #a00000;
     padding-left: 12px;
     height: 24px;
   }
@@ -309,7 +309,7 @@ ul.posts {
 	right: 37px;
 	bottom: 30px;
 	color: black !important;
-	border-right: 8px solid #a00;
+	border-right: 6px solid #a00;
 	padding-right: 11px;
 }
 .tohome {
@@ -317,7 +317,7 @@ ul.posts {
 	right: 37px;
 	bottom: 66px;
 	color: black !important;
-	border-right: 8px solid #a00;
+	border-right: 6px solid #a00;
 	padding-right: 11px;
 }
 
